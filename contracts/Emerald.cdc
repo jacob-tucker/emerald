@@ -180,7 +180,7 @@ pub contract Emerald: FungibleToken {
 
     init() {
         // Total supply of Emerald is 100,000
-        self.totalSupply = 100_000.0
+        self.totalSupply = 1_000_000.0
 
         self.TokenStoragePath = /storage/EmeraldVault
         self.TokenPublicReceiverPath = /public/EmeraldReceiver

@@ -463,10 +463,10 @@ pub contract EMLDFLOWSwapPair: FungibleToken {
     self.totalSupply = 0.0
     self.feePercentage = 0.003 // 0.3%
 
-    self.AdminStoragePath = /storage/bltUsdtPairAdmin
-    self.TokenStoragePath = /storage/bltUsdtFspLpVault
-    self.TokenPublicBalancePath = /public/bltUsdtFspLpBalance
-    self.TokenPublicReceiverPath = /public/bltUsdtFspLpReceiver
+    self.AdminStoragePath = /storage/EMLDFLOWPairAdmin
+    self.TokenStoragePath = /storage/EMLDFLOWLpVault
+    self.TokenPublicBalancePath = /public/EMLDFLOWLpBalance
+    self.TokenPublicReceiverPath = /public/EMLDFLOWLpReceiver
 
     // Setup internal FlowToken vault
     self.token1Vault <- FlowToken.createEmptyVault() as! @FlowToken.Vault
